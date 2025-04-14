@@ -14,6 +14,7 @@ def cmd_api_client(username):
         return False
 
     print(r.text)
+    print("hello")
 
 
 if __name__ == '__main__':

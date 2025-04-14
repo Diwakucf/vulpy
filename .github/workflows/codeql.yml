@@ -31,7 +31,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: +security-and-quality # default CodeQL query suite
+        queries: ./github/codeql/custom-queries
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
